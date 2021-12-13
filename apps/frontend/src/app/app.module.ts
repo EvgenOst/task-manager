@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavigationLayoutModule } from './common/components/navigation-layout/navigation-layout.component';
+import { UnauthenticatedContentModule } from './unauthenticated-content';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NavigationLayoutModule,
+    UnauthenticatedContentModule,
     AppRoutingModule,
   ],
   providers: [],

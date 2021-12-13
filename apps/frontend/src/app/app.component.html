@@ -1,1 +1,9 @@
-<div>App Works!</div>
+<ng-container *ngIf="isAuthenticated$ | async; else unauthenticated">
+  <app-navigation-layout [title]="title">
+    <router-outlet></router-outlet>
+  </app-navigation-layout>
+</ng-container>
+
+<ng-template #unauthenticated>
+  <app-unauthenticated-content></app-unauthenticated-content>
+</ng-template>
